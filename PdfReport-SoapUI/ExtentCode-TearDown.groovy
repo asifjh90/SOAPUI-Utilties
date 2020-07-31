@@ -13,7 +13,6 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.soapuiFrameWork.utility.PdfCreatorUtils;
-import com.soapuiFrameWork.*;
 
 // Get the project path
 def projectPath = new com.eviware.soapui.support.GroovyUtils(context).projectPath
@@ -21,14 +20,6 @@ def relativeFilePath = projectPath.replace("\\","//");
 def reportPath = relativeFilePath + "//Reports"
 def failedTSCount = "0"
 def failedTCCount = "0"
-
-// Delete all the files in reports folder
-def cleanCreateFolder = FilesDeleter.DeleteFilesInFolder(reportPath)
-if(cleanCreateFolder.equalsIgnoreCase("true")){
-	log.info "New Folder is created at " + reportPath
-} else {
-	log.error "Folder creation failed"
-}
 
 ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(reportPath + "//soapuiExecutionReport.html");
 PdfCreatorUtils.pdfFileName(reportPath + "//soapuiExecutionReport");
