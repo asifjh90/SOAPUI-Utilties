@@ -39,12 +39,13 @@ Below are the steps required to integrate Extent Report with SOAPUI,
 
 1.	Download the required jars mention in pre-requisite section of this article and paste it in the ${SOAPUI_HOME}\bin\ext folder.
 2.	Download the config.properties file and update below parameters inside in the file,
-	-	logopath 	:	*provide the path of SOAPUI Logo file
-	-	pdfFilePath :	*provide the path, where you want to generate PDF file
-	-	authorname	:	*provide the author information
-	-	reporttitle	:	*provide PDF report title
-	-	piechartPath:	*provide the path where pieChart will generate. Usually i will be same as pdfFilePath
-	-	bargraphPath:	*provide the path where barGraph will generate. Usually i will be same as pdfFilePath
+	| logopath | * provide the path of SOAPUI Logo file |
+	| pdfFilePath | * provide the path, where you want to generate PDF file |
+	| authorname | * provide the author information |
+	| reporttitle | * provide PDF report title |
+	| piechartPath | * provide the path where pieChart will generate. Usually i will be same as pdfFilePath |
+	| bargraphPath | * provide the path where barGraph will generate. Usually i will be same as pdfFilePath |
+	
 3.	Place this config file at the root location where your project is saved.
 4.	Create a SOAPUI project and add TestSuite and TestCase as required.
 5.	Add custom property to TestSuite as,
