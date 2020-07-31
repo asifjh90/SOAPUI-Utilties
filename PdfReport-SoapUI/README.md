@@ -39,6 +39,8 @@ Below are the steps required to integrate Extent Report with SOAPUI,
 
 1.	Download the required jars mention in pre-requisite section of this article and paste it in the ${SOAPUI_HOME}\bin\ext folder.
 2.	Download the config.properties file and update below parameters inside in the file,
+	| Parameter | Description |
+	| --- | --- |
 	| logopath | * provide the path of SOAPUI Logo file |
 	| pdfFilePath | * provide the path, where you want to generate PDF file |
 	| authorname | * provide the author information |
